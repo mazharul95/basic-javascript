@@ -16,10 +16,11 @@
 // }
 // i = i + 2;
 // shorthand: i += 2;
-for (var i = 1; i <= 10; i += 2) {
+//target: find 1 to 10 all event number
+for (var i = 0; i <= 10; i += 2) {
   console.log(i);
 }
-
-for(var i = 1; i <= 10; i+=2){
-  console.log()
+//target: find 1 to 10 all odd number
+for (var i = 1; i <= 10; i += 2) {
+  console.log();
 }
