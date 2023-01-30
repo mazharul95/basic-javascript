@@ -1,6 +1,6 @@
 // //
 // var numbers = 0;
-// while (numbers < 10) {
+// while (numbers < 10) {number 
 //   console.log(numbers);
 //   numbers++;
 // }
