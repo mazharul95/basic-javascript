@@ -8,27 +8,54 @@
     <link rel="stylesheet" href="styles/style.css" />
     <style>
       li {
-        color: greenyellow;
+        color: steelblue;
+      }
+      #fruits-title {
+        color: black;
+      }
+      #places-title {
+        color: goldenrod;
+      }
+      .important-places {
+        color: blueviolet;
       }
     </style>
   </head>
   <body>
     <header>
       <h1>Welcome to my DOM</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam magnam,
+      nisi cum accusamus dicta praesentium odio, magni illum consectetur
+      dignissimos consequatur ipsum blanditiis vitae deserunt nobis tenetur,
+      facilis voluptates maiores?
     </header>
     <main>
-      <h1>My Awesome Dom De baba</h1>
-      <ul>
-        <li>Jalali Set</li>
-        <li>Shafayet</li>
-        <li>bonobash</li>
-        <li>bonobash 24</li>
-      </ul>
-      <ul>
-        <li>apple</li>
-        <li>Banana</li>
-        <li>Carrot</li>
-      </ul>
+      <section>
+        <h1>My Awesome Dom De baba</h1>
+        <ul>
+          <li>Jalali Set</li>
+          <li>Shafayet</li>
+          <li>bonobash</li>
+          <li>bonobash 24</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="fruits-title">Fruits i Like</h1>
+        <ul>
+          <li>apple</li>
+          <li>Banana</li>
+          <li>Mango</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="places-title">Places i like to visit</h1>
+        <ul>
+          <li class="important-places">Sylhet</li>
+          <li class="important-places">coxbazaar</li>
+          <li class="important-places">Sundorban</li>
+          <li>Rangamati</li>
+        </ul>
+      </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
@@ -43,11 +70,19 @@
 
       const liCollection = document.getElementsByTagName("li");
       for (const li of liCollection) {
-        console.log(li.innerText);
+        //console.log(li.innerText);
       }
       const h1Collection = document.getElementsByTagName("h1");
       for (const h1 of h1Collection) {
-        console.log(h1.innerText);
+        //console.log(h1.innerText);
+      }
+
+      const fruitsTitle = document.getElementById("fruits-title");
+      fruitsTitle.innerText = "fruits changed By Js";
+
+      const places = document.getElementsByClassName("important-places");
+      for (const place of places) {
+        console.log(place.innerText);
       }
     </script>
   </body>
